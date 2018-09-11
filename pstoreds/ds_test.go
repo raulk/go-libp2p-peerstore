@@ -65,5 +65,5 @@ func TestBadgerDsAddrBook(t *testing.T) {
 }
 
 func BenchmarkBadgerDsPeerstore(b *testing.B) {
-	pt.BenchmarkPeerstore(b, newPeerstoreFactory(b))
+	pt.BenchmarkPeerstore(b, newPeerstoreFactory(b), "Original")
 }
